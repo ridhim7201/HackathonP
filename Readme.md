@@ -79,8 +79,7 @@ GOOGLE_VISION_API_KEY=   # optional, only if using Cloud Vision instead of Tesse
 
 ## Contributing
 
-Issues and PRs welcome, especially for script-pair edge cases (chillu letters in Malayalam, schwa deletion rules, Tamil's lossy consonant mapping).
 
-## License
-
-MIT
+- [ ] Siri M
+- [ ] Sharanya B
+- [ ] Ridhi M
