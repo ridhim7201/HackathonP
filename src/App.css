@@ -1,0 +1,30 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-shell__header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.app-shell__logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ink-night);
+}
+
+.app-shell__tagline {
+  font-size: 0.78rem;
+  color: var(--slate-muted);
+  letter-spacing: 0.04em;
+}
+
+main {
+  flex: 1;
+}

@@ -1,0 +1,103 @@
+.panel {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  border: 1.5px solid var(--hairline);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel__title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--slate-muted);
+}
+
+.panel__textarea {
+  width: 100%;
+  min-height: 140px;
+  border: none;
+  resize: vertical;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  background: transparent;
+  color: var(--ink-night);
+}
+
+.panel__textarea:focus {
+  outline: none;
+}
+
+.panel__output {
+  min-height: 140px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.panel__placeholder {
+  color: var(--slate-muted);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.panel__copy-btn {
+  background: var(--paper-warm);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-3);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-night);
+  min-height: 36px;
+}
+
+.panel__copy-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.panel__lossy-badge {
+  background: rgba(181, 101, 29, 0.1);
+  border: 1px solid rgba(181, 101, 29, 0.3);
+  color: var(--caution-amber);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.panel__lossy-notes {
+  margin: var(--space-2) 0 0;
+  padding-left: var(--space-4);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* Side-by-side container used on the home page —
+   stacked on mobile, row on tablet/desktop. Defined here since both
+   TextInputPanel and ResultPanel are always used as this pair. */
+.panel-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+@media (min-width: 760px) {
+  .panel-row {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
